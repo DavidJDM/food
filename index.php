@@ -27,5 +27,15 @@ $view = new View();
 echo $view->render('views/home.html');
 });
 
+$f3->route('GET /breakfast', function() {
+    $view = new View();
+    echo $view->render('views/breakfast.html');
+});
+
+$f3->route('GET /breakfast/pancakes', function() {
+    $view = new View();
+    echo $view->render('views/pancakes.html');
+});
+
 //Run fat free
 $f3->run();
